@@ -53,7 +53,7 @@ function startdownload(box) {
 	if (box.downloading) {
 		return;
 	}
-	let url = "https://api.nerinyan.moe/d/{beatmapset_id}" + box.sid;  //https://txy1.sayobot.cn/beatmaps/download/mini/ //https://catboy.best/d/
+	let url = "https://osu.ppy.sh/api/v2/beatmapsets/${beatmapSetId}" + box.sid;  //https://txy1.sayobot.cn/beatmaps/download/mini/ //https://catboy.best/d/
 	box.downloading = true;
     box.classList.add("downloading");
     let xhr = new XMLHttpRequest();
