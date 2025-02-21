@@ -136,7 +136,7 @@ function(Osu, setPlayerActions, SliderMesh, ScoreOverlay, VolumeMenu, LoadingMen
             this.HP = this.HP * 0.5;
         }
 
-        let scoreModMultiplier = 1000000.0;
+        let scoreModMultiplier = 1.0;
         if (game.easy) scoreModMultiplier *= 0.50;
         if (game.daycore) scoreModMultiplier *= 0.30;
         if (game.hardrock) scoreModMultiplier *= 1.06;
