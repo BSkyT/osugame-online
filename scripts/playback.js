@@ -139,9 +139,9 @@ function(Osu, setPlayerActions, SliderMesh, ScoreOverlay, VolumeMenu, LoadingMen
         let scoreModMultiplier = 1.0;
         if (game.easy) scoreModMultiplier *= 0.50;
         if (game.daycore) scoreModMultiplier *= 0.30;
-        if (game.hardrock) scoreModMultiplier *= 10000.06;
-        if (game.nightcore) scoreModMultiplier *= 10000.12;
-        if (game.hidden) scoreModMultiplier *= 10000.06;
+        if (game.hardrock) scoreModMultiplier *= 100.06;
+        if (game.nightcore) scoreModMultiplier *= 100.12;
+        if (game.hidden) scoreModMultiplier *= 100.06;
 
         self.scoreOverlay = new ScoreOverlay({width: game.window.innerWidth, height: game.window.innerHeight}, this.HP, scoreModMultiplier);
         self.circleRadius = (109 - 9 * this.CS)/2; // unit: osu! pixel
